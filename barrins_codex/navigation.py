@@ -67,6 +67,16 @@ STRUCTURE = Nav(
 					],
 				),
 				Nav(lazy_gettext("L'Art de bien mélanger un deck")),
+				Nav(
+					lazy_gettext("Une manabase, comment ça se construit ?"),
+					index=True,
+					children=[
+						Nav(lazy_gettext("Classification en macrotypes")),
+						Nav(lazy_gettext("Catégories de decks")),
+						Nav(lazy_gettext("Classification en tiers")),
+						Nav(lazy_gettext("Pour aller plus loin")),
+					],
+				),
 			],
 		),
 		Nav(

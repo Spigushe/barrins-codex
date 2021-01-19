@@ -1,0 +1,78 @@
+{% extends "articles/une-manabase-comment-ca-se-construit/_layout.html" %}
+
+{% block title %}
+Une manabase, comment ça se construit ?
+{% endblock %}
+
+{% block section %}
+{% trans trimmed
+	frank_karsten=external("https://www.channelfireball.com/all-strategy/author/frank-karsten/", "Frank Karsten"),
+	scryfall=external("https://scryfall.com/", "Scryfall")
+%}
+<p>
+	Une partie importante de la construction d'un deck est la conception de sa base de mana.
+	Trouver la stratégie et les cartes principales d’un jeu en sont les éléments principaux mais
+	l’équilibrage des sources de mana pour assurer les bonnes couleurs au bon moment ou
+	le bon nombre de terrains sont des paramètres à prendre en compte dès les permières étapes de
+	la construction.
+</p>
+<p>
+	Cet article abordera les différents calculs rencontrés lors de la construction d'un deck, du
+	nombre de terrains à la répartition des sources de mana. La plupart des éléments de cette série
+	sont présents dans les articles de {{ frank_karsten }}, Hall of Famer et mathématicien de
+	renom, à l’origine de travaux de référence dans le domaine que couvre cet article.
+</p>
+<p>
+	Plus que reprendre les divers articles de Frank Karsten, cette série d'articles a pour
+	objectifs :
+</p>
+<ul>
+	<li>
+		faire tomber la barrière de la langue pour faciliter l’accès à ces informations ;
+	</li>
+	<li>
+		être une vulgarisation de ces concepts mathématiques, avec un mode d’emploi pratique ;
+	</li>
+	<li>
+		proposer des situations plus actuelles que celles mises en avant dans les articles
+		originaux, analysables avec les outils fournis ;
+	</li>
+	<li>
+		fournir de nouveaux exemples illustrant les applications de ces concepts dans des formats
+		avec des manabases plus complexes et contenant des explications plus détaillées sur les
+		hypothèses à effectuer et les implications pratiques à prendre en compte.
+	</li>
+</ul>
+<p>
+	Les trois premières parties de cette série présentent le raisonnement et détaillent le
+	fonctionnement des outils utilisés sans trop entrer dans les sources mathématiques pour
+	autant : détermination du nombre de sources colorées, cas particuliers, et nombre total de
+	terrains dans le deck.
+</p>
+<ul>
+	<li>Lien partie 1</li>
+	<li>Lien partie 2</li>
+	<li>Lien partie 3</li>
+</ul>
+<p>
+	La quatrième partie résume les précédentes et fournit une recette
+	applicable immédiatement.
+</p>
+<ul>
+	<li>Lien partie 4</li>
+</ul>
+<p>
+	La cinquième partie illustre un exemple pratique de conception d’une
+	manabase complète et offre une introduction à l’outil de recherche de {{ scryfall }}.
+</p>
+<ul>
+	<li>Lien partie 5</li>
+</ul>
+<p>
+	Bibliographie
+</p>
+<ul>
+	<li>Lien bibliographie</li>
+</ul>
+{% endtrans %}
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% import "articles/_contributors.html" as contributor with context %}
+
+{% block content %}
+<h1>{{ _("Une manabase, comment ça se construit ?") }}</h1>
+{{ contributor.aliquanto() }}
+{% block section %} {% endblock %}
+{% endblock %}
